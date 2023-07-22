@@ -1,0 +1,100 @@
+/* !COMMON CSS STARTS HERE====================================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--primaryFont);
+    background-color: rgb(255, 255, 255);
+}
+h1,h2,h3,h4,h5,h6,span,paragraph,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* !COMMON CSS ENDS HERE======================================================================================== */
+
+/* FACILITIES INFO STARTS HERE */
+#facilities {
+    margin-top: 100px;
+}
+#facilities .card {
+    text-align: center;
+    border: none;
+    border-left: 2px solid #F1F1F1;
+    border-right: 2px solid #F1F1F1;
+    border-radius: 0;
+    padding: 0 31px;
+}
+#facilities .card:first-child {
+    border-left: none;
+}
+#facilities .card:last-child {
+    border-right: none;
+}
+#facilities .card.esm:nth-child(2),
+#facilities .card.sm:nth-child(2),
+#facilities .card.md:nth-child(2) {
+    border-right: none;
+}
+#facilities .card.esm:nth-child(2) {
+    border-left: none;
+}
+#facilities .card.esm:nth-child(3),
+#facilities .card.sm:nth-child(3),
+#facilities .card.md:nth-child(3) {
+    border-left: none;
+}
+#facilities .card.esm:nth-child(4) {
+    border-left: none;
+}
+#facilities .card .icon {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FF6F61;
+    color: white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    padding: 0;
+    margin: auto;
+}
+#facilities .card .text {
+    text-align: left;
+    padding: 0;
+    margin: auto;
+    /* padding-left: 10px; */
+}
+#facilities .card .text h2 {
+    color: var(--text-color, #11161E);
+    font-family: var(--primaryFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    padding-top: 15px;
+}
+#facilities .card .text p {
+    color: var(--paragraph-color, #444);
+    font-family: var(--secondaryFont);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+#facilities .card .text p span {
+    color: #FF6F61fd;
+}
+/* FACILITIES INFO ENDS HERE */
